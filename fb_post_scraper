@@ -1,0 +1,24 @@
+2024-07-26 15:56:10,301 - __main__ - [ERROR] [c:\Scraping\facebook-post-and-comments-scraper\data_directory_facebook.py:116] - Error scraping posts: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.73)
+Stacktrace:
+	GetHandleVerifier [0x00007FF606AC9632+30946]
+	(No symbol) [0x00007FF606A7E3C9]
+	(No symbol) [0x00007FF606976FDA]
+	(No symbol) [0x00007FF60694CB85]
+	(No symbol) [0x00007FF6069F37A7]
+	(No symbol) [0x00007FF606A0A771]
+	(No symbol) [0x00007FF6069EC813]
+	(No symbol) [0x00007FF6069BA6E5]
+	(No symbol) [0x00007FF6069BB021]
+	GetHandleVerifier [0x00007FF606BFF83D+1301229]
+	GetHandleVerifier [0x00007FF606C0BDB7+1351783]
+	GetHandleVerifier [0x00007FF606C02A03+1313971]
+	GetHandleVerifier [0x00007FF606AFDD06+245686]
+	(No symbol) [0x00007FF606A8758F]
+	(No symbol) [0x00007FF606A83804]
+	(No symbol) [0x00007FF606A83992]
+	(No symbol) [0x00007FF606A7A3EF]
+	BaseThreadInitThunk [0x00007FFE72077374+20]
+	RtlUserThreadStart [0x00007FFE7221CC91+33]
+ - [6276:9684]
