@@ -102,13 +102,14 @@ class Selenium:
 
                 for post in posts:
                     post_content = post.find(
-                        "div", class_="x1iorvi4 x1pi30zi x1l90r2v x1swvt13"
+                        "div", class_="xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs x126k92a"
                     )
+                    print(post_content.text.encode('utf-8').decode('unicode_escape'))
                     comments = post.find_all(
                         "div", class_="x1y1aw1k xn6708d xwib8y2 x1ye3gou"
                     )
                     if post_content and post_content.text not in results["posts"]:
-                        results["posts"].append(post_content.text)
+                        results["posts"].append(post_content.text.encode('utf-8').decode('unicode_escape'))
                         results["comments"].extend(
                             [comment.text for comment in comments if comment]
                         )
@@ -142,15 +143,22 @@ class Selenium:
     # Method to search
     def search_topic(self):
         # Click the element using JavaScript
-        element = self.driver.find_element(By.XPATH, '//div[@class="x1n2onr6 x1ja2u2z x78zum5 x2lah0s xl56j7k x6s0dn4 xozqiw3 x1q0g3np xi112ho x17zwfj4 x585lrc x1403ito x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1qhmfi1 x1r1pt67 x1jdnuiz x1x99re3"]')
-        self.driver.execute_script("arguments[1].click();", element)
+        elements = self.driver.find_elements(By.CSS_SELECTOR, 'div.x1n2onr6.x1ja2u2z.x78zum5.x2lah0s.xl56j7k.x6s0dn4.xozqiw3.x1q0g3np.xi112ho.x17zwfj4.x585lrc.x1403ito.x972fbf.xcfux6l.x1qhh985.xm0m39n.x9f619.x1qhmfi1.x1r1pt67.x1jdnuiz.x1x99re3')
 
+# Check if the 4th element exists and click on it
+        if len(elements) >= 4:
+            elements[3].click()  # Index is 3 because it's zero-based (0 is the first element)
+        else:
+            print("The 4th element was not found.")
         # Locate the element using CSS Selector with placeholder attribute
         search_field = self.driver.find_element(By.CSS_SELECTOR, 'input[placeholder="Search this group"]')
         # Enter a search query
-        search_field.send_keys('Lê Khánh Trình')
+        search_field.send_keys('review phát triển ứng dụng web')
         search_field.send_keys(Keys.RETURN)
-
+        time.sleep(3)
+        checkbox = self.driver.find_element(By.XPATH, '//input[@aria-label="Most recent"]')
+        if not checkbox.is_selected():
+            checkbox.click()  # Click the checkbox to check it
         time.sleep(5)
     # Method to open Facebook in Chrome.
     def open_Facebook_posts(self):
