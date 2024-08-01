@@ -62,89 +62,127 @@ class Selenium:
     def __init__(self, driver):
         self.driver = driver
 
-    # def extract_posts(self):
-    #     results = {"posts": [], "comments": []}
-    #     try:
-    #         last_height = self.driver.execute_script(
-    #             "return document.body.scrollHeight"
-    #         )
+    def extract_posts(self):
+        results = {"posts": [], "comments": []}
+        try:
+            last_height = self.driver.execute_script(
+                "return document.body.scrollHeight"
+            )
 
-    #         # Scroll for 10 seconds
-    #         start_time = time.time()
-    #         end_time = start_time + 10
-    #         while time.time() < end_time:
-    #             # Scroll down to bottom
-    #             self.driver.execute_script(
-    #                 "window.scrollTo(0, document.body.scrollHeight);"
-    #             )
+            # Scroll for 10 seconds
+            start_time = time.time()
+            end_time = start_time + 10
+            while time.time() < end_time:
+                # Scroll down to bottom
+                self.driver.execute_script(
+                    "window.scrollTo(0, document.body.scrollHeight);"
+                )
 
-    #             # Wait to load page
-    #             time.sleep(3)
+                # Wait to load page
+                time.sleep(3)
 
-    #             # Calculate new scroll height and compare with last scroll height
-    #             new_height = self.driver.execute_script(
-    #                 "return document.body.scrollHeight"
-    #             )
-    #             if new_height == last_height:
-    #                 break
-    #             last_height = new_height
+                # Calculate new scroll height and compare with last scroll height
+                new_height = self.driver.execute_script(
+                    "return document.body.scrollHeight"
+                )
+                if new_height == last_height:
+                    break
+                last_height = new_height
 
-    #             # Extract posts and comments after the page has loaded
-    #             soup = BeautifulSoup(self.driver.page_source, "html.parser")
-    #             posts = soup.find_all("div", class_="x78zum5 x1n2onr6 xh8yej3")
+                # Extract posts and comments after the page has loaded
+                soup = BeautifulSoup(self.driver.page_source, "html.parser")
+                posts = soup.find_all("div", class_="x78zum5 x1n2onr6 xh8yej3")
 
-    #             for post in posts:
-    #                 post_content = post.find(
-    #                     "div", class_="xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs x126k92a"
-    #                 )
-    #                 print(post_content.text.encode('utf-8').decode('unicode_escape'))
-    #                 comments = post.find_all(
-    #                     "div", class_="x1y1aw1k xn6708d xwib8y2 x1ye3gou"
-    #                 )
-    #                 if post_content and post_content.text not in results["posts"]:
-    #                     results["posts"].append(post_content.text.encode('utf-8').decode('unicode_escape'))
-    #                     results["comments"].extend(
-    #                         [comment.text for comment in comments if comment]
-    #                     )
+                for post in posts:
+                    post_content = post.find(
+                        "div", class_="xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs x126k92a"
+                    )
+                    print(post_content.text.encode('utf-8').decode('unicode_escape'))
+                    comments = post.find_all(
+                        "div", class_="x1y1aw1k xn6708d xwib8y2 x1ye3gou"
+                    )
+                    if post_content and post_content.text not in results["posts"]:
+                        results["posts"].append(post_content.text.encode('utf-8').decode('unicode_escape'))
+                        results["comments"].extend(
+                            [comment.text for comment in comments if comment]
+                        )
 
-    #     except Exception as e:
-    #         logger.error(f"Error scraping posts: {e}")
-    #     return results
+        except Exception as e:
+            logger.error(f"Error scraping posts: {e}")
+        return results
     def extract_posts(self):
         #results = {"posts" : [], "comments" : []}
         results = {}
-        soup = BeautifulSoup(self.driver.page_source, "html.parser")
-        posts = soup.find_all("div", class_="x78zum5 x1n2onr6 xh8yej3")
-        for index, post in enumerate(posts):
-                post_content = post.find("div", class_="xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs x126k92a")
-                if post_content:
-                # Find the "Leave a comment" button within the post
-                    leave_comment_buttons = self.driver.find_elements(By.XPATH, f"//div[@aria-label='Leave a comment' and @role='button']")
-                    leave_comment_buttons[index].click()
-                    time.sleep(3)
-                    soup = BeautifulSoup(self.driver.page_source, "html.parser")
-                    comments = soup.find_all("div", class_="x1y1aw1k xn6708d xwib8y2 x1ye3gou")
-                    post_text = post_content.text.strip()
-                    if post_text not in results:
-                        results[post_text] = []
-                
-                    for comment in comments:
-                        results[post_text].append(comment.text.strip())
-                    # if post_content and post_content.text not in results["posts"]:
-                    #     results["posts"].append(post_content.text)
-                    #     for comment in comments:
-                    #         results["comments"].append(comment.text)
-                    #     # results["comments"].extend(
-                    #     #     [comment.text for comment in comments if comment]
-                    #     # )
-                    close_comment_buton = self.driver.find_element(By.XPATH, f"//div[@aria-label='Close' and @role='button']")
-                    close_comment_buton.click()
-                    # Wait for the comment section to close
-                    time.sleep(3)
-                    # Re-fetch the page source to ensure we're not extracting comments from an old view
-                    soup = BeautifulSoup(self.driver.page_source, "html.parser")
-                else:
-                    continue
+        try:
+            last_height = self.driver.execute_script(
+                "return document.body.scrollHeight"
+            )
+
+            # Scroll for 10 seconds
+            start_time = time.time()
+            end_time = start_time + 10
+            while time.time() < end_time:
+                # Scroll down to bottom
+                self.driver.execute_script(
+                    "window.scrollTo(0, document.body.scrollHeight);"
+                )
+
+                # Wait to load page
+                time.sleep(3)
+
+                # Calculate new scroll height and compare with last scroll height
+                new_height = self.driver.execute_script(
+                    "return document.body.scrollHeight"
+                )
+                if new_height == last_height:
+                    break
+                last_height = new_height
+            # Scroll back to the top of the page
+            self.driver.execute_script("window.scrollTo(0, 0);")
+            time.sleep(3)  # Wait for the page to scroll to the top
+            soup = BeautifulSoup(self.driver.page_source, "html.parser")
+            posts = soup.find_all("div", class_="x78zum5 x1n2onr6 xh8yej3")
+            leave_comment_buttons = self.driver.find_elements(By.XPATH, f"//div[@aria-label='Leave a comment' and @role='button']")
+            for index, post in enumerate(posts):
+                    #  # Locate the current post element using Selenium
+                    # post_elements = self.driver.find_elements(By.CLASS_NAME, "x78zum5 x1n2onr6 xh8yej3")
+                    # current_post = post_elements[index]
+                    
+                    # # Scroll to the current post
+                    # self.driver.execute_script("arguments[0].scrollIntoView();", current_post)
+                    # time.sleep(3)  # Wait for the post to be in view
+                    post_content = post.find("div", class_="xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs x126k92a")
+                    if post_content:
+                    # Find the "Leave a comment" button within the post
+                        comment_count_element = post.find("span", class_="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xi81zsa")
+                        if comment_count_element:
+                            leave_comment_buttons[index].click()
+                            time.sleep(3)
+                            soup = BeautifulSoup(self.driver.page_source, "html.parser")
+                            comments = soup.find_all("div", class_="x1y1aw1k xn6708d xwib8y2 x1ye3gou")
+                            post_text = post_content.text.strip()
+                            if post_text not in results:
+                                results[post_text] = []
+                        
+                            for comment in comments:
+                                results[post_text].append(comment.text.strip())
+                            # if post_content and post_content.text not in results["posts"]:
+                            #     results["posts"].append(post_content.text)
+                            #     for comment in comments:
+                            #         results["comments"].append(comment.text)
+                            #     # results["comments"].extend(
+                            #     #     [comment.text for comment in comments if comment]
+                            #     # )
+                            close_comment_buton = self.driver.find_element(By.XPATH, f"//div[@aria-label='Close' and @role='button']")
+                            close_comment_buton.click()
+                            # Wait for the comment section to close
+                            time.sleep(3)
+                            # Re-fetch the page source to ensure we're not extracting comments from an old view
+                            soup = BeautifulSoup(self.driver.page_source, "html.parser")
+                    else:
+                        continue
+        except Exception as e:
+            logger.error(f"Error scraping posts: {e}")  
         return results
 
     #Method to login
