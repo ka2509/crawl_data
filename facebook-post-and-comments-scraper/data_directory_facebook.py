@@ -144,15 +144,24 @@ class Selenium:
             posts = soup.find_all("div", class_="x78zum5 x1n2onr6 xh8yej3")
             leave_comment_buttons = self.driver.find_elements(By.XPATH, f"//div[@aria-label='Leave a comment' and @role='button']")
             for index, post in enumerate(posts):
-                    #  # Locate the current post element using Selenium
-                    # post_elements = self.driver.find_elements(By.CLASS_NAME, "x78zum5 x1n2onr6 xh8yej3")
-                    # current_post = post_elements[index]
-                    
-                    # # Scroll to the current post
-                    # self.driver.execute_script("arguments[0].scrollIntoView();", current_post)
-                    # time.sleep(3)  # Wait for the post to be in view
                     post_content = post.find("div", class_="xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs x126k92a")
                     if post_content:
+                        selenium_post = self.driver.find_element(By.XPATH, f"//div[contains(text(), '{post_content.text[:10]}')]")
+                        #Find the "See more" button
+                        try:
+                            see_more_button = selenium_post.find_element(By.XPATH, ".//div[contains(text(), 'See more')]")
+                            see_more_button.click()
+                        except Exception as e:
+                            print("this post dont have extra content", e)
+                        #Find all the content of that post
+                        first_paragraph =  post.find("div", class_="xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs x126k92a")
+                        content_post = first_paragraph.text.strip()
+                        try:
+                            sub_paragraph = post.find_all("div", class_="x11i5rnm xat24cr x1mh8g0r x1vvkbs xtlvy1s x126k92a")
+                            for paragraph in sub_paragraph:
+                                content_post += '\n' + paragraph.text.strip() 
+                        except Exception as e:
+                            print("this post dont have sub paragrpahs", e)
                     # Find the "Leave a comment" button within the post
                         comment_count_element = post.find("span", class_="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xi81zsa")
                         if comment_count_element:
@@ -160,12 +169,11 @@ class Selenium:
                             time.sleep(3)
                             soup = BeautifulSoup(self.driver.page_source, "html.parser")
                             comments = soup.find_all("div", class_="x1y1aw1k xn6708d xwib8y2 x1ye3gou")
-                            post_text = post_content.text.strip()
-                            if post_text not in results:
-                                results[post_text] = []
+                            if content_post not in results:
+                                results[content_post] = []
                         
                             for comment in comments:
-                                results[post_text].append(comment.text.strip())
+                                results[content_post].append(comment.text.strip())
                             # if post_content and post_content.text not in results["posts"]:
                             #     results["posts"].append(post_content.text)
                             #     for comment in comments:
@@ -178,7 +186,7 @@ class Selenium:
                             # Wait for the comment section to close
                             time.sleep(3)
                             # Re-fetch the page source to ensure we're not extracting comments from an old view
-                            soup = BeautifulSoup(self.driver.page_source, "html.parser")
+                            # soup = BeautifulSoup(self.driver.page_source, "html.parser")
                     else:
                         continue
         except Exception as e:
@@ -220,13 +228,14 @@ class Selenium:
         # Locate the element using CSS Selector with placeholder attribute
         search_field = self.driver.find_element(By.CSS_SELECTOR, 'input[placeholder="Search this group"]')
         # Enter a search query
-        search_field.send_keys('review phát triển ứng dụng web')
+        search_field.send_keys('"thầy" "cô" "review" "môn"')
         search_field.send_keys(Keys.RETURN)
         time.sleep(3)
-        checkbox = self.driver.find_element(By.XPATH, '//input[@aria-label="Most recent"]')
-        if not checkbox.is_selected():
-            checkbox.click()  # Click the checkbox to check it
-        time.sleep(5)
+        # bỏ bước này vì mặc định sẽ hiển thị những bài viết có tương tác cao lên trước => lấy được nhiều reivew hơn
+        # checkbox = self.driver.find_element(By.XPATH, '//input[@aria-label="Most recent"]')
+        # if not checkbox.is_selected():
+        #     checkbox.click()  # Click the checkbox to check it
+        # time.sleep(5)
     # Method to open Facebook in Chrome.
     def open_Facebook_posts(self):
 
