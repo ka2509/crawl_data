@@ -1,5 +1,6 @@
 import json
 from selenium import webdriver
+from lxml import etree
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -51,7 +52,15 @@ def add_colon_between_names(text):
     """
     return re.sub(r"([a-z])([A-Z])", r"\1: \2", text)
 
-
+def get_full_xpath(element):
+    components = []
+    while element is not None and element.name != '[document]':
+        siblings = element.find_previous_siblings(element.name)
+        index = len(siblings) + 1
+        components.append(f'{element.name}[{index}]')
+        element = element.find_parent()
+    components.reverse()
+    return '/' + '/'.join(components)
 # Initialize an empty list to store the post data
 all_posts = []
 
@@ -61,6 +70,7 @@ class Selenium:
     # Constructor method.
     def __init__(self, driver):
         self.driver = driver
+
 
     def extract_posts(self):
         results = {"posts": [], "comments": []}
@@ -120,7 +130,7 @@ class Selenium:
 
             # Scroll for 10 seconds
             start_time = time.time()
-            end_time = start_time + 10
+            end_time = start_time + 5
             while time.time() < end_time:
                 # Scroll down to bottom
                 self.driver.execute_script(
@@ -142,51 +152,59 @@ class Selenium:
             time.sleep(3)  # Wait for the page to scroll to the top
             soup = BeautifulSoup(self.driver.page_source, "html.parser")
             posts = soup.find_all("div", class_="x78zum5 x1n2onr6 xh8yej3")
-            leave_comment_buttons = self.driver.find_elements(By.XPATH, f"//div[@aria-label='Leave a comment' and @role='button']")
             for index, post in enumerate(posts):
                     post_content = post.find("div", class_="xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs x126k92a")
                     if post_content:
-                        selenium_post = self.driver.find_element(By.XPATH, f"//div[contains(text(), '{post_content.text[:10]}')]")
-                        #Find the "See more" button
-                        try:
-                            see_more_button = selenium_post.find_element(By.XPATH, ".//div[contains(text(), 'See more')]")
-                            see_more_button.click()
-                        except Exception as e:
-                            print("this post dont have extra content", e)
-                        #Find all the content of that post
-                        first_paragraph =  post.find("div", class_="xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs x126k92a")
-                        content_post = first_paragraph.text.strip()
-                        try:
-                            sub_paragraph = post.find_all("div", class_="x11i5rnm xat24cr x1mh8g0r x1vvkbs xtlvy1s x126k92a")
-                            for paragraph in sub_paragraph:
-                                content_post += '\n' + paragraph.text.strip() 
-                        except Exception as e:
-                            print("this post dont have sub paragrpahs", e)
-                    # Find the "Leave a comment" button within the post
+                        # Find the "Leave a comment" button within the post
                         comment_count_element = post.find("span", class_="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xi81zsa")
                         if comment_count_element:
-                            leave_comment_buttons[index].click()
+                            comment_button = post.find("div", attrs={"aria-label": "Leave a comment"})
+                            comment_button_xpath = get_full_xpath(comment_button)
+                            self.driver.find_element(By.XPATH, comment_button_xpath).click()
                             time.sleep(3)
                             soup = BeautifulSoup(self.driver.page_source, "html.parser")
                             comments = soup.find_all("div", class_="x1y1aw1k xn6708d xwib8y2 x1ye3gou")
+                            posts_popup = soup.find_all("div", class_="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xzsf02u x1yc453h")
+                            post_popup = posts_popup[len(posts_popup)-1]
+                            try:
+                                seemore_button = post_popup.find("div", class_="x1i10hfl xjbqb8w x1ejq31n xd10rxx x1sy0etr x17r0tee x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz x1sur9pj xkrqix3 xzsf02u x1s688f", role="button")
+                                if seemore_button:
+                                    seemore_button_xpath = get_full_xpath(seemore_button)
+                                    selenium_seemore_button = self.driver.find_element(By.XPATH, seemore_button_xpath)
+                                    print(selenium_seemore_button.text)
+                                    selenium_seemore_button.click()
+                                    time.sleep(1)
+                                    soup = BeautifulSoup(self.driver.page_source, "html.parser")
+                                    posts_popup = soup.find_all("div", class_="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xzsf02u x1yc453h")
+                                    post_popup = posts_popup[len(posts_popup)-1]
+                                else:
+                                    print("không có button")
+                            except Exception as e:
+                                print("this post dont have extra content", e)
+                            # extract all the content of the post
+                            # post = pop_up.find("div", class_="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xzsf02u x1yc453h")
+                            first_paragraph =  posts_popup.find("div", class_="xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs x126k92a")
+                            content_post = first_paragraph.text.strip()
+                            try:
+                                sub_paragraph = posts_popup.find_all("div", class_="html-a xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x1hl2dhg x16tdsg8 x1vvkbs")
+                                for paragraph in sub_paragraph:
+                                    content_post += ' \n' + paragraph.text.strip()
+                            except Exception as e:
+                                print("this post dont have sub span", e)
+                            try:
+                                sub_paragraph = posts_popup.find_all("div", class_="x11i5rnm xat24cr x1mh8g0r x1vvkbs xtlvy1s x126k92a")
+                                for paragraph in sub_paragraph:
+                                    content_post += ' \n' + paragraph.text.strip() 
+                            except Exception as e:
+                                print("this post dont have sub paragrpahs", e)
                             if content_post not in results:
                                 results[content_post] = []
-                        
                             for comment in comments:
                                 results[content_post].append(comment.text.strip())
-                            # if post_content and post_content.text not in results["posts"]:
-                            #     results["posts"].append(post_content.text)
-                            #     for comment in comments:
-                            #         results["comments"].append(comment.text)
-                            #     # results["comments"].extend(
-                            #     #     [comment.text for comment in comments if comment]
-                            #     # )
                             close_comment_buton = self.driver.find_element(By.XPATH, f"//div[@aria-label='Close' and @role='button']")
                             close_comment_buton.click()
                             # Wait for the comment section to close
                             time.sleep(3)
-                            # Re-fetch the page source to ensure we're not extracting comments from an old view
-                            # soup = BeautifulSoup(self.driver.page_source, "html.parser")
                     else:
                         continue
         except Exception as e:
