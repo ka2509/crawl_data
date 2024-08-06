@@ -155,48 +155,51 @@ class Selenium:
             for index, post in enumerate(posts):
                     post_content = post.find("div", class_="xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs x126k92a")
                     if post_content:
-                        # Find the "Leave a comment" button within the post
+                        # Find the "Leave a comment" button within the post if that post have one or more comments then click on the comment button
                         comment_count_element = post.find("span", class_="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xi81zsa")
                         if comment_count_element:
                             comment_button = post.find("div", attrs={"aria-label": "Leave a comment"})
                             comment_button_xpath = get_full_xpath(comment_button)
                             self.driver.find_element(By.XPATH, comment_button_xpath).click()
+                            #wait the comment section popup
                             time.sleep(3)
+                            #refetch
                             soup = BeautifulSoup(self.driver.page_source, "html.parser")
+                            #find all the comment
                             comments = soup.find_all("div", class_="x1y1aw1k xn6708d xwib8y2 x1ye3gou")
-                            posts_popup = soup.find_all("div", class_="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xzsf02u x1yc453h")
+                            #locate the post after pop up
+                            posts_popup = soup.find_all("span", class_="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xzsf02u x1yc453h")
                             post_popup = posts_popup[len(posts_popup)-1]
-                            try:
-                                seemore_button = post_popup.find("div", class_="x1i10hfl xjbqb8w x1ejq31n xd10rxx x1sy0etr x17r0tee x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz x1sur9pj xkrqix3 xzsf02u x1s688f", role="button")
-                                if seemore_button:
-                                    seemore_button_xpath = get_full_xpath(seemore_button)
-                                    selenium_seemore_button = self.driver.find_element(By.XPATH, seemore_button_xpath)
-                                    print(selenium_seemore_button.text)
-                                    selenium_seemore_button.click()
-                                    time.sleep(1)
-                                    soup = BeautifulSoup(self.driver.page_source, "html.parser")
-                                    posts_popup = soup.find_all("div", class_="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xzsf02u x1yc453h")
-                                    post_popup = posts_popup[len(posts_popup)-1]
-                                else:
-                                    print("không có button")
-                            except Exception as e:
-                                print("this post dont have extra content", e)
+                            #find see more button
+                            seemore_button = post_popup.find("div", class_="x1i10hfl xjbqb8w x1ejq31n xd10rxx x1sy0etr x17r0tee x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz x1sur9pj xkrqix3 xzsf02u x1s688f", role="button")
+                            #if that post have see more button then click 
+                            if seemore_button:
+                                seemore_button_xpath = get_full_xpath(seemore_button)
+                                selenium_seemore_button = self.driver.find_element(By.XPATH, seemore_button_xpath)
+                                selenium_seemore_button.click()
+                                #wait the caption loaded
+                                time.sleep(1)
+                                #refetch the pop up post
+                                soup = BeautifulSoup(self.driver.page_source, "html.parser")
+                                posts_popup = soup.find_all("span", class_="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xzsf02u x1yc453h")
+                                post_popup = posts_popup[len(posts_popup)-1]
+                            else:
+                                print("không có button")
                             # extract all the content of the post
-                            # post = pop_up.find("div", class_="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xzsf02u x1yc453h")
-                            first_paragraph =  posts_popup.find("div", class_="xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs x126k92a")
+                            first_paragraph =  post_popup.find("div", class_="xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs x126k92a") #this is the first
                             content_post = first_paragraph.text.strip()
-                            try:
-                                sub_paragraph = posts_popup.find_all("div", class_="html-a xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x1hl2dhg x16tdsg8 x1vvkbs")
-                                for paragraph in sub_paragraph:
-                                    content_post += ' \n' + paragraph.text.strip()
-                            except Exception as e:
-                                print("this post dont have sub span", e)
-                            try:
-                                sub_paragraph = posts_popup.find_all("div", class_="x11i5rnm xat24cr x1mh8g0r x1vvkbs xtlvy1s x126k92a")
+                            sub_list = post_popup.find_all("div", class_="html-a xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x1hl2dhg x16tdsg8 x1vvkbs")
+                            if sub_list:
+                                for list in sub_list:
+                                    content_post += ' \n' + list.text.strip()
+                            else:
+                                print("this post dont have sub list")
+                            sub_paragraph = post_popup.find_all("div", class_="x11i5rnm xat24cr x1mh8g0r x1vvkbs xtlvy1s x126k92a")
+                            if sub_paragraph:
                                 for paragraph in sub_paragraph:
                                     content_post += ' \n' + paragraph.text.strip() 
-                            except Exception as e:
-                                print("this post dont have sub paragrpahs", e)
+                            else:
+                                print("this post dont have sub paragrpahs")
                             if content_post not in results:
                                 results[content_post] = []
                             for comment in comments:
