@@ -1,230 +1,598 @@
 [
     {
         "post": "Anh chị nào đã hk môn lập trình hướng đối tượng cho em xin review các thầy cô dạy môn này với ạ . Em cảm ơn",
-        "comments": [
-            "Lê Hưng  · FollowSinh viên giờ toàn tìm thầy cô dễ tính, ko kiểm tra nhiều mà điểm cao :)))",
-            "Dương Trung ÁThêm chữ lại vào trước chữ học các anh sẽ tư vấn nhiệt tình hơn",
-            "Thắng PhanPhạm Đức Dũng :))",
-            "Thuý VũKiến trúc máy tính thầy Thành  nhá",
-            "Opa GouNé a Việt Anh ra  :)))",
-            "Nguyễn Thành NhânCô Minh Châu nhé."
-        ]
+        "comments": {
+            "Cô Minh Châu nhé.": [
+                "Cô dạy hay hay điểm cao hả anh mà cô có dễ tính k ạ",
+                "Điểm khá cao. Khá dễ tính. Best teacher ever.",
+                "Anh cho em hỏi luôn môn kiến trúc mt vs ạ",
+                "Môn đó anh không rõ lắm.",
+                "Vâng ạ thank a",
+                "kiến trúc mt thầy thành đi học đầy đủ auto A nhé"
+            ],
+            "Né a Việt Anh ra  :)))": [
+                "Why?",
+                "Điểm danh siêu đủ và random chấm bt",
+                "Chuẩn luôn, thầy Việt Anh chưa bao giờ k điểm danh",
+                "Nhìn cái bảng tổng kết gửi cả lớp chi chít điểm danh",
+                "Opa Gou Học cả kì trừ những hôm thầy cho nghỉ ra còn lại k dám nghỉ buổi nào",
+                "Thôi kỳ này đk lớp thầy đi, cho có tinh thần đến trg",
+                "còn chả biết thầy dạy môn nào nữa mà đăng kí, đợt trước học tin 1 của thầy",
+                "Thầy có đẹp trai không?",
+                "suýt ^^",
+                "V.A sẽ đc tặng kèm bộ cạ Bảo Ngọc    max đập troai"
+            ],
+            "Kiến trúc máy tính thầy Thành  nhá": [
+                "Ai khuyên đây nhể",
+                "Ko biết",
+                "",
+                "Thầy dễ tính hay điểm cao hả chị",
+                "Thầy thì ko dễ tính lắm. Nhưng điểm dễ. Đi học đầy đủ dc cộng 1 vào điểm TỔNG KẾT. Lên bảng 1 lần cộng 1 nữa.mình dc 6.0 mà cuối cùng lên 8.0 :))))",
+                "Ok thank chị"
+            ],
+            "Phạm Đức Dũng :))": [],
+            "Thêm chữ lại vào trước chữ học các anh sẽ tư vấn nhiệt tình hơn": [],
+            "Sinh viên giờ toàn tìm thầy cô dễ tính, ko kiểm tra nhiều mà điểm cao :)))": [
+                "hồi xưa m ko thế à =))",
+                "Như m thôi :)))"
+            ]
+        }
+    },
+    {
+        "post": "Mọi người ơi cho em xin review môn Tối ưu hoá của thầy Nghiêm Nguyễn Việt Dũng và môn Phương pháp tính của thầy Lê Phê Đô với ạ \nTrong 2 môn trên em nên học môn nào hơn và môn đó sẽ về nội dung gì ạ? \nEm cảm ơn!",
+        "comments": {
+            ".": [],
+            "Thầy Trần Trúc Mai nhé": [
+                "Thầy tên kute thế"
+            ],
+            "thầy Nguyễn Hoài Sơn nhé": [
+                "Thầy dạy dễ hiểu không ạ?",
+                "dễ thì dễ nhưng điểm sao đc vậy",
+                "thầy dạy dễ tập trung trên lớp là được, giữa kỳ cũng k khó lắm cứ theo slide là được, đấy là năm mình học",
+                "Em cảm ơn ạ ^^",
+                "???? Anh",
+                "thế n mới thú zị"
+            ],
+            "học thầy Hồ Đắc Phương với Sơn đi": [
+                "Thầy dễ tính không",
+                "học vui lắm, thầy bảo đến lớp không được mang sách vở, chỉ cần ngồi nghe thôi rồi về nhà làm gì thì làm",
+                "thầy cũng k khó tính đâu. đến trc thầy là đc",
+                "Thế thì Chin trượt chắc luôn =))",
+                "chỉ cần đến lớp đúng giờ thôi mà",
+                "Đấy là cả vấn đề luôn rồi =)))",
+                "Nguyen Thi Thu Huong điểm thế nào vậy chị?",
+                "cũng đc. nói chung thầy dễ tính mà"
+            ],
+            "Vote học marketing :)) học mạng máy tính tạch đấy": [
+                "Kiểu gì cũng phải học 1 cái không liên quan nên học mạng chắc hay hơn a ạ",
+                ":)) A khuyên thôi. chứ tùy e mà",
+                "marketing đi e ơi",
+                "Học mạng khó lắm à a",
+                "thấy mấy đứa lớp a học xong lại chuyển qua marketing  để cái thiện",
+                "điểm cao thì học marketing mặc dù chưa học  nhưng mà thic cảm giác mới lạ thì học mạng cũng ok",
+                "Thích chơi ngu lấy tiếng chị ạ Nguyen Thi Thu Huong"
+            ],
+            "thầy nguyễn văn nam best cho điểm nhé": [
+                "Dễ hiểu không ạ?",
+                "Bỏ thầy Nam đi ._.",
+                "Sao thế",
+                "thầy dạy không hay đâu :))",
+                "Thầy nam nào thế chú",
+                "Nam tin 1 ý",
+                "Vũ Quốc Phong nam cơ nhiệt",
+                "thế chốt lại là th Nam nào?  mà tin1 hay cơ nhiệt cũng nên tránh"
+            ],
+            "Học marketing đi. Học mạng ko học đc đâu": [
+                "Sao vậy chị?",
+                "Nghe thì hay thôi toàn c với D có khi trượt. Học marketing điểm dễ mad nhàn hơn.",
+                "Khó vậy ạ @@",
+                "Ờ. Đừng lao vào học.mấy đứa lớp chị từng nghĩ như e rồi học lại hêt .Ko được thêm gì khéo lại trượt đấy.",
+                "Học marketing đi. Nhàn hơn nhiều",
+                "Yeb. Chị tích lũy bao nhiêu rồi thế",
+                "Trên 3.2",
+                "Chị đã làm như nào vậy"
+            ],
+            "Với kinh nghiệm học mỗi tuần một thầy và mỗi thầy một phong cách dạy  thì anh thấy học thầy nào cũng ổn": [
+                "Thầy cô nào có thể bao dung cho bọn vãng lai như e =))",
+                ":)) Học như bọn anh mà còn qua đc/ :))",
+                "1 sinh viên giỏi chia sẻ",
+                "tạch rồi bé",
+                "E nghi lắm",
+                "tạch rồi/. cả  2 đứa",
+                "Kì này e chưa tạch môn nào hú hú"
+            ],
+            "Học chuyên nghiệp trong cn đi": [
+                "Môn đấy không được tính hay sao ý a",
+                "Mmt vs cntcn là 2 môn tự chọn 3 tín mà đùa à",
+                "Năm nay môn tự chọn có nguyên lí marketing, mạng máy tính với công nghệ phần mềm a ạ",
+                "À chết mẹ a quên :]]]] cnpm :)) chuyên nghiệp là khác :))",
+                "Học cnpm di :)) k học mmt thầy trần trúc mai cũng đc :))",
+                "A học rồi à",
+                "À trc a học cnpm :)))",
+                "Dễ không a",
+                "Thầy Mai dạy thế nào ạ"
+            ],
+            "Thầy Hồ Đắc Phương nhé, best =))(": [
+                "Là sao?",
+                "Đầu tiên thầy sẽ dạy m trở thành 1 sinh viên gương, đi học đúng giờ, làm bài tập đầy đủ, và vì thế mà m sẽ qua môn, ez",
+                "T sinh viên gương mẫu sẵn rồi =)))"
+            ],
+            "Xác suất học thầy lê sỹ vinh ấy , kì này k có thì để kì sau": [
+                "lúc k đki đc thể dục nên e tích bừa cái xác xuất cho đủ 6 môn",
+                "Đừng học thầy hải",
+                "k qua môn ạ",
+                "mà C còn nhục hơn",
+                "Thầy nhiệt tình , nhưng cho điểm thấp , đấy là review từ bạn a đã học , kì sau đki thầy lê sỹ vinh chủ nhiệm khoa cntt mà học",
+                "tks a :))"
+            ],
+            "toán rr là ko lo tạch r": [
+                "thật ạ :))",
+                "học thầy hải chán lắm",
+                "xác xuất ấy ạ ?",
+                "uk chán",
+                "lấy TL Toán rùng rợn ko",
+                "tks a ạ :))",
+                "vc a??",
+                "e 99",
+                "e sn 99 ạ",
+                "tưởng 97 mới học toán RR rồi"
+            ],
+            "a khuyên m nên giữ 2, và 6": [
+                "sao hai anh ở trên bảo đừng học Thầy Hải ??",
+                "hk thầy m chỉ cần chịu khó nghe giảng, ghi chép mà nhớ là oki",
+                "",
+                "hình như hơi khó",
+                "chỉ cần học và nhớ",
+                "a có bảo m hk đâu",
+                "chỉ bảo m nhớ thôi mà",
+                "hahâ",
+                "chia sẻ của 1 thanh niên \"hè năm sau học lại cho chắc\" hahaha"
+            ],
+            "Hủy CTDL&GT đi em.............Để a học =))": [],
+            "hủy xstk học lớp mh khác đi em =))": [
+                "ai cũng bảo hủy sxtk =))",
+                "đúng rồi mà em =)) học 1 kỳ nhớ cả 4 năm",
+                "Lê Hà My ồ. môn kiến trúc máy tính học thầy Thành là quá tốt rồi =))",
+                "vâng ạ :))",
+                "cho e hỏi thể dục học ai mới tốt ạ ?e k thấy ai dạy TD tốt nên chưa đki",
+                "Lê Hà My",
+                "thể dục thì chịu em ạ =)) học ai cũng được. đi học đầy đủ là các thầy thoải mái cho qua ý mà",
+                "lại hà lê r",
+                "San im nào t còn đang giữ quà sn của m đấy nhé"
+            ],
+            "16 tín :))": [
+                "tư tưởng hcm",
+                "còn slot c đâu"
+            ],
+            "đổi lớp CTDLGT cho mình dc ko bạn, mình tặng cầu lông T7-8": [
+                "mình hủy sxtk rồi nên còn mỗi 13 tín :))K đổi đc đâu :))",
+                "ý mình là mình cũng có 1 lớp CTDLGT và muốn đổi với bạn, sau mình tặng bạn thêm cầu lông nữa để cảm ơn",
+                "nếu đổi thì bạn có 14 tín =))",
+                "CTDLGT thứ với tiết như nào bạn :))",
+                "ai dạy thế ?",
+                "lớp INT2203 1 thứ 6 tiết 7-8 BT thầy Kiều Thanh Bình dạy và thứ 3 tiết 5-6 LT thầy Phạm Bảo Sơn dạy",
+                "thứ 6 tiết 7-8 mình LTHĐT rồi",
+                "bạn đổi qua lớp này xem, vẫn là lớp lý thuyết đấy chỉ đổi tiết TH thôi"
+            ],
+            "lthdt học cô Châu ấy": [
+                "giờ chả còn lớp Cô Châu đâu ạ :))",
+                "sao thế ?",
+                "có lớp nào cô Châu đâu ??",
+                "oh thế à, năm nay chắc cô bạn gì đấy"
+            ],
+            "học đi, kén với chả chọn. Như điện quang ấy ~..~": [
+                "xong điện quang vẫn A+ :)))",
+                "ngon vãi cứt ~..~",
+                "mn bảo t hủy sxtk đi mà :))T hủy rồi đấy :))",
+                "Lê Hà My bảo bao h nhỉ",
+                "mọi người bảo t hủy xác xuất thống kê ấy",
+                "t hủy rồi",
+                "Lê Hà My sao huỷ? tau có bảo mầy huỷ đâu",
+                "t có bảo mày đâu",
+                "Lê Hà My à mắt kém đọc ko kĩ ~..~"
+            ],
+            "Tối ưu hoá thầy Đông thui :))": [
+                "Tăng Hà thầy Hoàng nữa thầy dạy siu có tâm luôn"
+            ],
+            "Tối ưu hóa mình ko rõ thầy Việt Dũng dạy ntn, nhma mình khuyên là nên học thầy Đỗ Đức Đông hoặc thầy Hà Minh Hoàng nhé bạn Phương pháp tính thầy Đô cũng là môn nên học, thầy dạy cực dễ hiểu luôn": [
+                "Lê Dương anh ơi cho em xin rv phương pháp tính chi tiết hơn được không ạ"
+            ],
+            "Tối ưu hoá thầy Dũng học full lý thuyết về 1 số thuật toán bạn nhé, gần như là môn học thuộc": [],
+            "Nguyễn Minh Quân Chi Hoàng review tối ưu hoá thầy Dũng đi": [
+                "Trần Thanh Thảo 10đ",
+                "Trần Thanh Thảo mê quá, sắp học lại :vv"
+            ],
+            "Quang Minh kìa anh": [],
+            "Tu Quynh Vu kìa review ppt thầy Đô đi": [
+                "Trần Thúy không trêu b"
+            ],
+            "Hoàng Anh Minh phương pháp tính lê phê đô kìa review đi": [],
+            "Nguyễn Thủy bạn review thầy Dũng đi": [
+                "Lê Công Hoàng lẽ ra thầy 10đ nhưng vì toi thiếu 0.1 nên thầy cũng chỉ 9.9đ thoi"
+            ],
+            "Tối ưu hoá thầy Dũng đỉnh lắm nhaa": [],
+            "Tối ưu hoá là thầy Đông dạy, thầy Dũng là trợ giảngThầy nhiệt tình, học rất vuiGiữa kì làm báo cáo về 1 thuật toán, nếu lên thuyết trình thì đc cộng điểmCuối kì đề như mọi năm nhé": []
+        }
     },
     {
         "post": "Anh chị ơi , cho e xin Review thầy cô về mấy môn này được ko ak!!Cấu trúc dữ liệu và giải thuật \n- CN. Nguyễn Đình Tuân \nLinh kiện điện tử \n- TS. Bùi Thanh Tùng \nKỹ thuật điện \n-  PGS.TS. Chử Đức Trình",
-        "comments": [
-            "Ngô Minh Khánh......",
-            "Huy NguyễnNguyễn Trọng Linh đm người ae thấy gì chưa =)) tự hào vc",
-            "Thịnh Nguyễnm học linh kiện điện tử ???",
-            "Lê HoàHóng ké ;))",
-            "Lê HoàHóng ké ;))",
-            "Nguyễn Việt TrungKỹ thuật điện chắc vẫn thầy Chí dạy thay thầy Trình thôi",
-            "Tuấn TúNghỉ học đi em",
-            "Hoàng Tâmm học cấu trúc ai đó bảo a để a đk học chung vs"
-        ]
-    },
-    {
-        "post": "Các anh/ chị/ bạn cho em xin review môn mạng máy tính nên học thầy cô nào với ạ. Em cảm ơn",
-        "comments": [
-            "Duc Minh VuThầy Nguyễn Hoài Sơn nhé",
-            "Thuý VũThầy nguyễn văn nam nhé. Hiểu thì ko hiểu đâunhg điểm dễ",
-            "Linh Vănvote Hồ Đắc Phương nhé",
-            "Hai NamThầy Nam nhé",
-            "Văn Tuấn PhạmMr. Hồ Đắc Phương nhé. Mình học 3 lần mạng máy tính rồi mình biết",
-            "Tuấn NguyenHọc cnpm đi ,ngon ăn hơn mạng máy tính đấy",
-            "Văn ĐôngThầy Hồ Đắc Phương nhé, best =))(",
-            "Nguyễn Quang TâmHọc chuyên nghiệp trong cn đi",
-            "Tiến Dũng TháiVới kinh nghiệm học mỗi tuần một thầy và mỗi thầy một phong cách dạy  thì anh thấy học thầy nào cũng ổn",
-            "Nguyễn HồngHọc marketing đi. Học mạng ko học đc đâu"
-        ]
-    },
-    {
-        "post": "Em chào anh/chị ! \nAnh/ chị nào có slide bài giảng Vật Lý Đại Cương 2 của các thầy/ cô thì có thể cho em xin được không ạ? \nEm lên tài liệu VNU nhưng trên đấy gần như không có slide bài giảng môn này, vậy nên mong anh/ chị giúp em ạ. \n",
-        "comments": [
-            "Viet AnhVlđc 2 cần gì học mấy đâu đề ck trường cho như giveaway A+ à",
-            "Tung Do HuuViet Anh Đâu, do lớp mình toàn các bạn học chăm chỉ nghiêm túc với thầy cô dạy hay nên đề nào cũng dễ chứ",
-            "Anonymous memberAuthorViet Anh Vì đề cuối kì vật lý 1 vừa rồi khó nên em nghĩ kì 2 cũng sẽ khó anh ạ.",
-            "Viet AnhThành viên ẩn danh kì 2 bọn a như giveaway A+",
-            "Đặng DũngBạn muốn xin slide của Thầy/Cô nào",
-            "Anonymous memberAuthorĐặng Dũng Thầy/ cô nào cũng được anh ạ.",
-            "Đặng DũngAnonymous member https://www.facebook.com/share/cn6XDZfBtjgrTR7r/?mibextid=WC7FNe",
-            "Cong Minh Phamhttps://drive.google.com/.../1NJXVbIZCGQt8hkHfobFOAgSamnP... tặng em",
-            "Anonymous memberAuthorCong Minh Pham em cảm ơn anh nhiều ạ"
-        ]
+        "comments": {
+            "m học cấu trúc ai đó bảo a để a đk học chung vs": [
+                "e đang xin review đây a , còn danh sách trên là nhà trường đki cho >> nghe nói cô Thanh gì đó ok",
+                "Nguyễn Trọng Dũng ờ, cô Thanh học thật thi thật.. học lấy kiến thức thì ok",
+                "Hoàng Tâm  là răng mà anh đã học chưa, răng e tìm trên thời khóa biểu ko thấy cô thanh",
+                "Nguyễn Trọng Dũng a tạch đnag học lại đấy...còn ccô Thanh thì a biết",
+                "Hoàng Tâm  ừ ok , mai hẹn 9h hoàng đạo",
+                "Nguyễn Trọng Dũng vậy dk ai cho a theo vs",
+                "Nguyễn Trọng Dũng cô thanh á  đừng mơ 1 giấc mơ đẹp",
+                "Bành Đức Minh  đù -.- răng đâyyyy",
+                "Nguyễn Trọng Dũng chừa cô thanh ra, còn ai cũng đc",
+                "mà học ngành chi mà có cả kĩ thuật điện với linh kiện rứa"
+            ],
+            "Nghỉ học đi em": [
+                "duma ôn tín hiệu đi a"
+            ],
+            "Kỹ thuật điện chắc vẫn thầy Chí dạy thay thầy Trình thôi": [
+                "A học qua chưa a , thầy Trình ok k ak ^^",
+                "kỹ thuật điện khoa cơ, điện tử vs hàng k đều học nhưung mỗi bên co 1 giảng viên mà",
+                "T thầy năm ngoái bn điện tử viễn thông toàn thầy Chí dạy"
+            ],
+            "Nguyễn Trọng Linh đm người ae thấy gì chưa =)) tự hào vc": [
+                "đăng ký học thầy Tuân thôi",
+                "Hic thầy Tuân ơi cho em học cải thiện với. Ctdl em được có D thôi",
+                "Hoàng Linh đăng kí học thầy Tuân chưa bạn?"
+            ],
+            "Hóng ké ;))": [
+                "."
+            ],
+            "......": [
+                "."
+            ],
+            "m học linh kiện điện tử ???": [
+                "Thịnh Nguyễn  ừ ?? Nhà trường sắp đấy",
+                "Nguyễn Trọng Dũng  môn này nghe tên lạ thật .khoa điện tử viễn thông à",
+                "Thịnh Nguyễn  đúng r a"
+            ]
+        }
     },
     {
         "post": "mọi người cho em xin ít review về môn kỹ thuật điều khiển của cô Vân và thầy Triển với ạ ,:(",
-        "comments": [
-            "Nguyễn HiếuHọc cô Vân em ơi"
-        ]
+        "comments": {
+            "Học cô Vân em ơi": []
+        }
     },
     {
-        "post": "Mọi người cho em xin review môn Tin sinh học thầy Cường với ạ, môn này có phải làm btl không ạ?",
-        "comments": [
-            "Lò ĐứcTìm hiểu về 1 vấn đề, 1 bài báo và có 3 buổi để trình bàyPros: Học cách research độc lập, trình bày, phản biện. Thử sức với tin học trong y tế (chủ yếu là học máy).Cons: Không có nhiều ứng dụng trực tiếp nếu em làm swe.Bản thân môn học không vô dụng, cách mình tiếp cận nó thế nào thôi. Học thật làm thật thì ko ứng dụng trực tiếp cũng ứng dụng gián tiếp. Học cho đủ môn thì mình không đánh giá  mà cũng không nên đánh giá 1 môn học là vô dụng hay không nếu học với tiêu chí đấy.",
-            "Phan QuânPhạm Quang review giúp bạn với kìa",
-            "Nguyễn Minh Đức10 điểm k có nhưng",
-            "Guang NanLâm Hoàng vô khóc",
-            "Nguyễn Quang HuyNguyễn Trần Anh Đức Phạm Anh Cường cho em nó xin review",
-            "Nguyễn Trường ThànhA+ trong lòng bàn tay :)))",
-            "Lê DươngThuyết trình BTL từ tuần 5 tuần 6 j đấy lấy gk, ck là trình bày toàn bộ những gì đã thuyết trình và một số cái khác liên quan đến BTL bằng văn bản, ncl nhàn lắm",
-            "Nghia BeTôi chưa học nhưng khoá bạn tôi cao nhất là B+ hsao ấy :)))",
-            "Nguyễn Thành Đôko học đc gì từ môn này đâu em"
-        ]
-    },
-    {
-        "post": "Các anh chị review giúp em thầy cô mấy môn này với ạ ?có nên hủy môn nào đi không ạ ?",
-        "comments": [
-            "Đặng Trunglthdt học cô Châu ấy",
-            "Trần Mạnh Hùnghủy xstk học lớp mh khác đi em =))",
-            "Trần Quốc NamHủy CTDL&GT đi em.............Để a học =))",
-            "Lương Mạnhhọc đi, kén với chả chọn. Như điện quang ấy ~..~",
-            "Anh Tuấnđổi lớp CTDLGT cho mình dc ko bạn, mình tặng cầu lông T7-8",
-            "My Hà LêAuthor16 tín :))",
-            "Ngô Đình Thànha khuyên m nên giữ 2, và 6",
-            "Phạm Duytoán rr là ko lo tạch r",
-            "TuấnXác suất học thầy lê sỹ vinh ấy , kì này k có thì để kì sau"
-        ]
-    },
-    {
-        "post": "Các bạn cho mình xin review môn bóng chuyền da được khum ạ, có thầy cô nào gắt gắt mà dạy môn này k  Mình cảm ơn nhée",
-        "comments": [
-            "Nguyễn Đăng QuangCó thầy huychungtom gắt nhất :))",
-            "bù nhìnmôn gdtc cơ bản là điền kinh phải ko mọi người?"
-        ]
+        "post": "Em chào anh/chị ! \nAnh/ chị nào có slide bài giảng Vật Lý Đại Cương 2 của các thầy/ cô thì có thể cho em xin được không ạ? \nEm lên tài liệu VNU nhưng trên đấy gần như không có slide bài giảng môn này, vậy nên mong anh/ chị giúp em ạ. \n",
+        "comments": {
+            "Vlđc 2 cần gì học mấy đâu đề ck trường cho như giveaway A+ à": [
+                "Viet Anh Đâu, do lớp mình toàn các bạn học chăm chỉ nghiêm túc với thầy cô dạy hay nên đề nào cũng dễ chứ",
+                "Viet Anh Vì đề cuối kì vật lý 1 vừa rồi khó nên em nghĩ kì 2 cũng sẽ khó anh ạ.",
+                "Thành viên ẩn danh kì 2 bọn a như giveaway A+"
+            ],
+            "Bạn muốn xin slide của Thầy/Cô nào": [
+                "Đặng Dũng Thầy/ cô nào cũng được anh ạ.",
+                "Anonymous member https://www.facebook.com/share/cn6XDZfBtjgrTR7r/?mibextid=WC7FNe"
+            ],
+            "https://drive.google.com/.../1NJXVbIZCGQt8hkHfobFOAgSamnP... tặng em": [
+                "Cong Minh Pham em cảm ơn anh nhiều ạ"
+            ]
+        }
     },
     {
         "post": "Mọi người cho em xin review môn Tin Sinh Học của thầy Cao Cường được không ạ",
-        "comments": [
-            "Vinh Quang TranNguyễn Hoàng chỉ giáo môn này auto A+ 10 tròn",
-            "Phạm Tuấn Hiệpcả lớp trên 8."
-        ]
+        "comments": {
+            "cả lớp trên 8.": [
+                "bạn cho mình hỏi về hình thức học và thi được không",
+                "chả học gì đâu, mấy buổi đầu thầy giảng mấy cái kiến thức sinh học ltinh, r chia thành các nhóm chuẩn bị tìm hiểu 1 bài báo về tin sinh học -> lên thuyết trình xoay vòng tầm 2 3 buổi mỗi nhóm -> lấy điểm giữa kỳ và cuối kỳ",
+                "Phạm Tuấn Hiệp đằng cấp",
+                "Phạm Tuấn Hiệp đúng là pro, phán câu nào câu đấy căng đét",
+                "ông hoàng review",
+                "chúa tể póc phốt"
+            ],
+            "Nguyễn Hoàng chỉ giáo môn này auto A+ 10 tròn": [
+                "Vinh Quang Tran Auto A+, muốn được A mà không được cứ phải A+ thôi",
+                "Vinh Quang Tran chán lắm cơ. Muốn điểm A thầy cứ bắt nhận A+"
+            ]
+        }
     },
     {
         "post": "Mọi người cho tớ xin review Môn Nguyên Lý Hệ Điều Hành học thế nào với( thầy Hiếu, thầy Thành, thầy Châu,cô Hậu, thầy Chiến  ..) môn này là môn tự chọn vs t",
-        "comments": [
-            "Bùi Đức Thọthầy hiếu, học nguyên slide + ghi chép mấy bt, ví dụ thầy đưa ra trên lớp là ok (có thể trúng vào cuối kì)giữa kì, cuối kì xem tài liệu thoải mái",
-            "Ngọc Sơnthầy sơn nhé bạn  vô hoxx",
-            "Tiến DuyMôn đấy khó vcc nhé bạn.",
-            "Nguyễn Xuân Đươngthầy đương nhé bạn",
-            "Phạm Công Minhthấy Hiếu"
-        ]
+        "comments": {
+            "thấy Hiếu": [
+                "thầy full nhanh quá, môn này thế nào bạn?",
+                "trừu tượng hóa",
+                "khó lắm hả ?",
+                "Khá khó",
+                "Nhưng lấy 7-8 điểm thì chăm là được",
+                "con lấy 10 thì cần siêu nhân"
+            ],
+            "thầy đương nhé bạn": [
+                "thầy đấy chỉ học môn thông thôi"
+            ],
+            "Môn đấy khó vcc nhé bạn.": [
+                "học rồi à, A thôi đúng k? :))"
+            ],
+            "thầy sơn nhé bạn  vô hoxx": [
+                "cút"
+            ],
+            "thầy hiếu, học nguyên slide + ghi chép mấy bt, ví dụ thầy đưa ra trên lớp là ok (có thể trúng vào cuối kì)giữa kì, cuối kì xem tài liệu thoải mái": []
+        }
     },
     {
-        "post": "Dạ ai cho em xin rv môn Kỹ năng khởi nghiệp của cô Hoàng Thị Hải Yến với thầy Chử Đức Hoàng với ạNên học ai và hình thức thi của 2 thầy cô này như nào, em xin cảm ơn ạ",
-        "comments": [
-            "Hoàng Văn PhiCô Yến học cực đã :)) cô cực kì tâm huyết =)) nói chung là tuyệt vời =))",
-            "Tien Dunghọc cô Yến vui lắm bạn, có nhiều hoạt động hay, điểm cô cho cũng cao, giữa kỳ pitching với cô, cuối kỳ làm tiểu luận",
-            "Hiếu PhạmTien Dung phần làm tiểu luận có khó lắm k ạ",
-            "Tien DungHiếu Phạm dễ lắm = )), t làm đúng 1 ngày được 9đ",
-            "Trần Huy HoàngHiếu Phạm ae mk có thể collab vs nha",
-            "Hiếu PhạmTrần Huy Hoàng cẹc"
-        ]
-    },
-    {
-        "post": "Mọi người cho em xin riviu về các môn tự chọn với ạ. Kì sau e vẫn còn full 15 tín nhưng  chưa biết nên học môn nào và thầy cô nào cho hợp lý =(( \nNhững môn đánh dấu là những môn e dự định sẽ đăng ký. Nhưng môn nào dễ mn recommend giúp e ở dưới nhé. \nMn riviu luôn thầy cô dạy môn đó luôn nhé \nThầy cô khó tính cũng được nhưng cho điểm hợp lý là được ạ",
-        "comments": [
-            "Phúc Nguyễnquản lý dự án phần mềm m học r à",
-            "Công Nguyễnthu thập phân tích yêu cầu",
-            "Công Nguyễnquản lý dự án",
-            "Nguyen Ngoc GioiQuản lý dự án ok đó, chăm làm bt các thứ là đc, cuối kì thì có dạng bài chỉ cần ôn kĩ là đc",
-            "Trần Văn Phongthiết kế giao diện khá easy",
-            "Hùng NguyễnThương mại đt code ecom :)))",
-            "Thành Long4 môn đầu nhé",
-            "Phạm Tuấn Dũngbỏ requirement engineering mà làm nguời em ơi",
-            "Kiều Longhọc an toàn an ninh",
-            "Thuý VũThương mại điện tử thầy Hưng cả lớp A vs A+ nhé  quản lý dự án pm chăm làm bt, cuối kì ôn dc là ok. Điểm danh gắt thôi."
-        ]
-    },
-    {
-        "post": "Cho em xin review các môn này với ạ+ CSDL thầy Vũ Bá Duy + cô Cẩm Vân+ OOP thầy Võ Đình Hiếu+ KTMT thầy Ngọc Hóa+ XSTK thầy Đặng Cao Cường",
-        "comments": [
-            "Phạm TúCsdl tuyệt vời, 10 điểm",
-            "Lê DươngKTMT aim thầy Trần Trọng Hiếu hoặc Trần Xuân Tú hoặc Nguyễn Trí Thành nha XSTK muốn kiếm A+ easily thì aim thầy Đô OOP thầy Võ Đình Hiếu là tốt nhất rồi, giữ lại nhó",
-            "Huy Nguyen QuangKtmt nộp bài đủ là được nhé =)))))))",
-            "Vũ Minh ThưTrần Thanh Thảo thầy Cường ổn k cậu",
-            "Hoàng Gia Minh1 bú đẫm2 nấu ăn3 không biết4 nấu ăn",
-            "Nami NguyenMuốn kiến thức chắc thì học thầy Duy. Oop thầy VĐH thì quá tuyệt zời rùi. Còn lại chưa trải nghiệm :>",
-            "Tiến Quangchí ý thì hãy thêm chữ thầy với chữ cô vào để tôn trọng họ chứ nhỉ ?",
-            "Vũ Minh Hiếu(1) run away, (4) mr Đô and Vinh is da best,",
-            "Nguyễn Hoài Ngânrun from (1) (đã trải nghiệm) và (2) (4) (nghe bảo thế)",
-            "Nam HàChạy ngay khỏi thầy Duy e nhé =]]]]"
-        ]
-    },
-    {
-        "post": "mn cho em xin review về môn Kiểm thử và đảm bảo chất lượng phần mềm của thầy Nguyễn Văn Sơn với ạ. Em cảm ơn ạ",
-        "comments": [
-            "Hoàng Đạođiểm cao, thầy nhiệt tình",
-            "Tiến Cris1 câu chuyện buồn",
-            "Guang NanMột từ: Học ^^",
-            "Lê Văn TuấnTuyệt vời 10 điểm luôn em nhé, thầy nhiệt tình, cho điểm dễ trong trường hợp em chịu học :))"
-        ]
+        "post": "Các bạn cho mình xin review môn bóng chuyền da được khum ạ, có thầy cô nào gắt gắt mà dạy môn này k  Mình cảm ơn nhée",
+        "comments": {
+            "Có thầy huychungtom gắt nhất :))": [
+                "Nguyễn Đăng Quang thầy quát gắt lắm hả bạn:))",
+                "Nguyễn Đăng Quang à bạn ơi thầy huychungtom là 1 thầy hay 3 thầy thế bạn:))",
+                "Nguyễn Đăng Quang Bạn đùa à, thấy thầy dễ tính với học chill chill mà"
+            ],
+            "môn gdtc cơ bản là điền kinh phải ko mọi người?": [
+                "Đông Trùng mình thấy mã môn giống hệt điền kinh nên chắc cũng k khác nhau về nội dung học bạn ạ"
+            ]
+        }
     },
     {
         "post": "M.n cho e xin review về các thầy cô dạy môn mạng máy tính và công nghệ phần mềm vs ạ",
-        "comments": [
-            "Đỗ Thanh TâmNguyễn Vũ Đông đây này c",
-            "Khánh DuyMạng máy tính học thầy Hồ Đắc Phương nhá. Sách mạng máy tính trường mình là do thầy viết :))",
-            "Dương Nguyễnhọc mạng máy tính thì cứ thầy Sơn mà tiến thôi",
-            "Văn Sĩthầy bá duy e nhé",
-            "Hoàn Nguyễn ĐắcMạng máy tính học Hồ Đắc Phương nhé ;))",
-            "Nguyễn ThưởngChấm"
-        ]
-    },
-    {
-        "post": "Em muốn xin review các thầy cô em sắp học năm tới ạXSTK - thầy Đặng Thanh HảiCSDL - cô Dư Phương Hạnh-TA và cô Nguyễn Ngọc Quỳnh-THDSA - thầy Lê Quang Hiếu-CL và thầy Kiều Hải Đăng-THKTMT - PGS.TS Nguyễn Ngọc Hóa OOP - thầy Trần Hoàng Việt",
-        "comments": [
-            "An Duc Vinh PhamThầy Hải dạy hay nha em!",
-            "Diễm QuỳnhNguyễn Trang  hoc dsa hong",
-            "Nguyễn Linhdsa mình học thầy Đăng thực hành, cũng chủ yếu lên lớp tự làm bài thôi. có gì khó hỏi thầy. Mình thấy thầy cho điểm không khó nên học cx oke",
-            "Nguyễn Linhmình ko học xstk thầy Hải nhưng học thầy toán rr nếu là mình thì mình sẽ không chọn học thầy nữa đâu nên bạn tự hiểu =)))))",
-            "Lê DươngDSA thầy Hiếu oke nhé em, OOP thầy Việt nữa XSTK thầy Đặng Thanh Hải cx oke, nhma có thể chọn thầy Lê Phê Đô cũng rất được nhé",
-            "Nghia BeKtmt thầy Hoá thì... khóMôn đấy nhiều cái hơi trừu tượng nên khó kp do thầy. Còn thầy thì cũng k quá áp lực với sinh viên, nmà đừng để đầu rỗng là được",
-            "Nguyễn Linhthầy Việt dạy dễ hiểu, trong lớp ghi chép vở đầy đủ là giữa kỳ điểm cao (gki kiểm tra tự luận, dc dùng tài liệu). Mình thấy thầy dạy nhiệt huyết và dễ tính nếu bạn nghiêm túc học hành ^^ đi học đầy đủ vì thầy có điểm danh"
-        ]
+        "comments": {
+            "Chấm": [],
+            "Mạng máy tính học Hồ Đắc Phương nhé ;))": [
+                "Bọn e hok tin 4 thầy phương năm nhất r mà thầy dạy hơi chán :))) nên ko biết mạng máy tính có ổn ko",
+                "Đỗ Hương Mình thấy thầy giảng khá hay, nếu chú ý nghe thì ok đấy.Còn nếu muốn dễ pass thì học thầy Nam.",
+                "chia sẻ từ 1 thanh niên sắp học lại thầy lần 2 :))",
+                "Thầy phương dạy hay mà mỗi tội nếu học thầy mấy tiết đầu h thì k nên,đặc biệt những thanh niên hay ngủ nước thích đi học muộn thì nên tránh",
+                "Vâng e cảm ơn ạ",
+                "Chả biết cc thế nào chứ t thấy mất gốc từ bài hello world",
+                "Dạy dc mà học thày còn có tư duy nghìn đô nữa",
+                "Các thánh thì ko ns",
+                "học thầy hồ đắc phương auto giữa kỳ đc sử dụng tài liệu nhưng cứ ngó ngoáy sang bên cạnh auto đánh dấu bài.thầy sẽ dọa thi giữa kỳ nhưng đến buổi cuối thầy mời cho thi",
+                "cần thêm gì e ib a nhé"
+            ],
+            "thầy bá duy e nhé": [
+                "bá duy thì các bé xác định đi",
+                "a đang hc DMS của thầy"
+            ],
+            "học mạng máy tính thì cứ thầy Sơn mà tiến thôi": [
+                "theo mk thấy điểm dễ A+ hay ko là do từng người chứ cũng chỉ có 1 số môn thầy dễ thôi",
+                "ừ cũng đúng nhưng thầy Sơn dạy hay"
+            ],
+            "Mạng máy tính học thầy Hồ Đắc Phương nhá. Sách mạng máy tính trường mình là do thầy viết :))": [],
+            "Nguyễn Vũ Đông đây này c": []
+        }
     },
     {
         "post": "Mn ơi kì này môn dsa em có những thầy cô như sau:● Thầy Nguyễn Việt Hà- cô Vương Thị Hải Yến● Thầy Lê Quang Hiếu- thầy Kiều Hải Đăng● Thầy Lê Quang Hiếu- thầy Ngô Xuân Trường● Cô Nguyễn Nhật Thanh- cô Nguyễn Thị Thu Trang A● Thầy Bùi Ngọc Thăng- cô Vương Thị Hải Yến● Thầy Nguyễn Việt Anh- cô Vương Thị Hải Yến●Cô Ngô Thị Duyên- cô Nguyễn Thị Thu Trang A●Cô Ma Thị Châu- cô Nguyễn Thị Thu Trang A \nMn có thể cho em xin review về các thầy cô kể trên được k ạ và em nên lựa chọn học lớp của thầy cô nào ạ. Em cảm ơn.",
-        "comments": [
-            "Nguyễn HoàngAuto cô Ma Thị Châu nhé",
-            "Anonymous memberAuthorNguyễn Hoàng cô dạy hay lắm hả anh. Anh có thể nói rõ hơn chút đc k ạ",
-            "Nguyễn HoàngThành viên ẩn danh cô chỉ dạy rất tận tình, với lại học cô thì bạn có cơ hội xin cô hướng dẫn các môn về sau như đồ án, thực tập, dự án,..... Cô lo từ A đến Z cho bạn luôn",
-            "Anonymous memberAuthorNguyễn Hoàng em cảm ơn anh ạ",
-            "Vũ Minh Hiếuhọc cô Châu 1 lần mà vẫn nice xừ, cô Châu 10đ không có nhưng nhé em.",
-            "Anonymous memberAuthorem cảm ơn anh"
-        ]
+        "comments": {
+            "Auto cô Ma Thị Châu nhé": [
+                "Nguyễn Hoàng cô dạy hay lắm hả anh. Anh có thể nói rõ hơn chút đc k ạ",
+                "Thành viên ẩn danh cô chỉ dạy rất tận tình, với lại học cô thì bạn có cơ hội xin cô hướng dẫn các môn về sau như đồ án, thực tập, dự án,..... Cô lo từ A đến Z cho bạn luôn",
+                "Nguyễn Hoàng em cảm ơn anh ạ"
+            ],
+            "học cô Châu 1 lần mà vẫn nice xừ, cô Châu 10đ không có nhưng nhé em.": [
+                "em cảm ơn anh"
+            ]
+        }
+    },
+    {
+        "post": "Dạ ai cho em xin rv môn Kỹ năng khởi nghiệp của cô Hoàng Thị Hải Yến với thầy Chử Đức Hoàng với ạNên học ai và hình thức thi của 2 thầy cô này như nào, em xin cảm ơn ạ",
+        "comments": {
+            "học cô Yến vui lắm bạn, có nhiều hoạt động hay, điểm cô cho cũng cao, giữa kỳ pitching với cô, cuối kỳ làm tiểu luận": [
+                "Tien Dung phần làm tiểu luận có khó lắm k ạ",
+                "Hiếu Phạm dễ lắm = )), t làm đúng 1 ngày được 9đ",
+                "Hiếu Phạm ae mk có thể collab vs nha",
+                "Trần Huy Hoàng cẹc"
+            ],
+            "Cô Yến học cực đã :)) cô cực kì tâm huyết =)) nói chung là tuyệt vời =))": [],
+            "Shubarb Trần": [
+                "Nguyễn Minh Tuấn có 1 sự thật là môn này cực kỳ dễ qua với thầy (xin lỗi thầy e k nhớ tên) . Và có 1 buổi offline hội nghị bàn tròn 5 nhớ đời Trần Hoàng Sơn"
+            ],
+            "Tâm Văn Lê": []
+        }
+    },
+    {
+        "post": "Mọi người cho em xin riviu về các môn tự chọn với ạ. Kì sau e vẫn còn full 15 tín nhưng  chưa biết nên học môn nào và thầy cô nào cho hợp lý =(( \nNhững môn đánh dấu là những môn e dự định sẽ đăng ký. Nhưng môn nào dễ mn recommend giúp e ở dưới nhé. \nMn riviu luôn thầy cô dạy môn đó luôn nhé \nThầy cô khó tính cũng được nhưng cho điểm hợp lý là được ạ",
+        "comments": {
+            "quản lý dự án phần mềm m học r à": [
+                "chưa m. t đánh dấu những môn dự định sẽ học"
+            ],
+            "thu thập phân tích yêu cầu": [],
+            "quản lý dự án": [
+                "môn đấy c học với thầy nào đó?",
+                "chỉ có 1 thầy dạy thôi mà, đúng với yêu cầu luôn nhé"
+            ],
+            "Quản lý dự án ok đó, chăm làm bt các thứ là đc, cuối kì thì có dạng bài chỉ cần ôn kĩ là đc": [
+                "môn đấy có bt lớn ko Giỏi ưi?"
+            ],
+            "thiết kế giao diện khá easy": [
+                "Trần Văn Phong Môn đấy có btl ko ạ? Nó có giống môn phân tích và thiết kế hdt ko a?",
+                "bác có thể xin mở lớp thêm  đợt em học cũng là xin mở thêm lớp chứ ban đầu có đâu",
+                "Môn đó là tự thiết kế chứ k phải thiết kế theo mẫu có sẵn đúng không ạ?",
+                "tới đợt đăng ký môn học xin  đủ người yêu cầu thì thường nhà trường sẽ mở thôi"
+            ],
+            "Thương mại đt code ecom :)))": [
+                "học điểm cao không Hùng?",
+                "Hùng Nguyễn học r à m?",
+                "vote thầy Hưng"
+            ],
+            "4 môn đầu nhé": [
+                "?",
+                "Thành Long là môn j",
+                "Thành Long thu thập là học j thế",
+                "Thành Long học thầy cô nào ok Long ưii"
+            ],
+            "bỏ requirement engineering mà làm nguời em ơi": [
+                "Phạm Tuấn Dũng thầy dạy chí phải",
+                "Phạm Tuấn Dũng môn đấy khó ko ạ? Có bài tập lớn ko a?",
+                "Hay bạn bị lú lẫn ween rồi"
+            ],
+            "học an toàn an ninh": [
+                "Kiều Long Học chưa m ơi? Tao nghe chữ \"mạng\" lại sợ sợ giống môn mạng máy tính thì chết dở",
+                "A+ bạn ơi",
+                "=)))",
+                "C học thầy nào đấy",
+                "giữa kì thì trả lời câu hỏi đủ 8 câu đúng thì 10 hoặc làm bài tập thầy giao, cuối kì được mang tài liệu kì trước full 10 :))",
+                "Với cả bth hàng tuần có phải làm bt nộp cho thầy ko?",
+                "t học full mạng, còn 2 môn nữa kì này đăng kí nốt là truyền thông với lập trình mạng thôi với cả hệ thống thương mại điện tử của thầy Trần Trọng Hiếu nữa"
+            ],
+            "Thương mại điện tử thầy Hưng cả lớp A vs A+ nhé  quản lý dự án pm chăm làm bt, cuối kì ôn dc là ok. Điểm danh gắt thôi.": [
+                "an toàn an ninh mạng ôn thi theo đề, thầy k điểm danh. Ôn dc thì điểm ok  có bài tập lấy điểm giữa kì nhưng ez thôi. Khai phá dữ liệu thầy Thụy điểm cũng ổn =)) nhưng ngày nào cũng điểm danh đầu giờ :)) đi muộn là toang",
+                "Thu thập phân tích YC vs kiểm thử cũng làm bt hàng tuần. hơi hên xui :))) chả hiểu sao mình thấy ez mà nhiều ng kêu khó :))"
+            ]
+        }
+    },
+    {
+        "post": "Mọi người cho em xin review môn Tin sinh học thầy Cường với ạ, môn này có phải làm btl không ạ?",
+        "comments": {
+            "10 điểm k có nhưng": [
+                "Nguyễn Minh Đức học môn này có vất vả quá ko ạ, em đăng kí kì này 22 tín nên sợ vất quá không học được ạ"
+            ],
+            "Lâm Hoàng vô khóc": [
+                "Quang Nam ngon mà, mức điểm từ B+ trờ lên :>"
+            ],
+            "Thuyết trình BTL từ tuần 5 tuần 6 j đấy lấy gk, ck là trình bày toàn bộ những gì đã thuyết trình và một số cái khác liên quan đến BTL bằng văn bản, ncl nhàn lắm": [
+                "Lê Dương cho em hỏi cụ thể btl là làm gì ạ",
+                "Lê Dương cuối kì là làm ở nhà hay làm trên lớp vậy anh"
+            ],
+            "Nguyễn Trần Anh Đức Phạm Anh Cường cho em nó xin review": [
+                "Nguyễn Quang Huy -2 học bổng của 2 thầy chứ em có mất mát gì đâu"
+            ],
+            "A+ trong lòng bàn tay :)))": [],
+            "free a+ Hải Sơn": [
+                "Môn này dễ"
+            ],
+            "ko học đc gì từ môn này đâu em": [
+                "Thầy rep chán thế thầy =))",
+                "Nguyễn Thành Đô thầy nói đúng quá ạ, đúng nhận sai cãi luôn ạ",
+                "Nguyễn Thành Đô thầy nói thẳng thế",
+                "Nguyễn Thành Đô nói nhỏ thôi thầy",
+                "Nguyễn Thành Đô nói giảm nói tránh thôi thầy"
+            ],
+            "Phạm Quang review giúp bạn với kìa": [
+                "10 điểm"
+            ],
+            "Ninh Thảo": [
+                "Lê Thanh Huyền review có tâm cho ẻm đi kìa"
+            ],
+            "Tìm hiểu về 1 vấn đề, 1 bài báo và có 3 buổi để trình bàyPros: Học cách research độc lập, trình bày, phản biện. Thử sức với tin học trong y tế (chủ yếu là học máy).Cons: Không có nhiều ứng dụng trực tiếp nếu em làm swe.Bản thân môn học không vô dụng, cách mình tiếp cận nó thế nào thôi. Học thật làm thật thì ko ứng dụng trực tiếp cũng ứng dụng gián tiếp. Học cho đủ môn thì mình không đánh giá  mà cũng không nên đánh giá 1 môn học là vô dụng hay không nếu học với tiêu chí đấy.": [
+                "Lò Đức quá chi tiết ạ"
+            ]
+        }
     },
     {
         "post": "Mọi người ơi, cho e xin review thầy cô học cải thiện môn Đại số với ạ",
-        "comments": [
-            "Phạm Việt HoàngHọc thầy Trần Thanh Tùng ấy :))",
-            "Phan ĐạtPhạm Việt Hoàng m có đc A+ đâu ??"
-        ]
+        "comments": {
+            "Học thầy Trần Thanh Tùng ấy :))": [
+                "Phạm Việt Hoàng m có đc A+ đâu ??"
+            ]
+        }
     },
     {
-        "post": "Mng có thể cho mình xin review cách dạy, cho điểm của thầy Lê Khánh Trình được không ạ. Kì này mình đăng kí OOAD của thầy nhưng hình như đây là lần đầu thầy dạy môn này nên không có nhiều thông tin.",
-        "comments": [
-            "Quân TrịnhThầy 10 điểm nhỉ Hoàng Gia MinhHà Hoàng Phúc",
-            "Dũng Việt Vũthầy xịn sò nhé :))",
-            "Lê Khánh TrìnhBạn học thử r review lại nha",
-            "Tung TungBạn Leo Duy Khánh học năm 2 uet review kìa",
-            "Hien ShiroThầy đẹp chai, cho điểm sướng. Còn lúc học thì nói thật đời t chưa baoh ngồi khấn với tần suất kinh khủng như thế mỗi tiết thầy dạy :))Nma quan trọng là thầy đẹp chai  Recommended",
-            "Đậu XanhChăm phát biểu lên nhé, bú đẫm lên nhé*Từ một người được +10 bonus tổng kết của thầy Đừng hỏi ngu. Đứa khác lấy điểm đấy*A đã thó của 1 thằng 3 điểmChăm làm bvn, trong h học nghiêm túc *Điểm auto cao luôn nhé, toàn B+ đổ lên cả lớpVà thầy ĐẸP TRAI LẮM LUÔN NHÉ. Rcm học",
-            "Đỗ Nhữ Hoàng NamĐúng rùi, hình như kì này là kì đầu thầy dạy môn này ó.Review về thầy thì thầy đẹp trai nha =))))) Thầy cũng dạy khá chill. Môn mình học thì chủ yếu là làm bài tập lớn thôi nên mình cũng chưa rõ lắm về khả năng truyền đạt của thầy, nma mình nghĩ là cũng oke thôi vì giọng thầy mình thấy hay. Điểm thầy cho với mình thì khá oke.Nên học nha =))))))))))Môn này cuối kì thi giấy đề chung nên là mình nghĩ là các thầy chấm bài cũng giống nhau thôi."
-        ]
+        "post": "Cho em xin review các môn này với ạ+ CSDL thầy Vũ Bá Duy + cô Cẩm Vân+ OOP thầy Võ Đình Hiếu+ KTMT thầy Ngọc Hóa+ XSTK thầy Đặng Cao Cường",
+        "comments": {
+            "Csdl tuyệt vời, 10 điểm": [
+                "Phạm Tú tin chuẩn không anh"
+            ],
+            "Chạy ngay khỏi thầy Duy e nhé =]]]]": [
+                "Nam Hà =))) thầy làm gì với bro à",
+                "Nam Hà cậu tệ thế"
+            ],
+            "run from (1) (đã trải nghiệm) và (2) (4) (nghe bảo thế)": [
+                "Nguyễn Hoài Ngân"
+            ],
+            "(1) run away, (4) mr Đô and Vinh is da best,": [
+                "Vũ Minh Hiếu Thầy Duy dạy dễ hiểu mà."
+            ],
+            "Trần Thanh Thảo thầy Cường ổn k cậu": [],
+            "KTMT aim thầy Trần Trọng Hiếu hoặc Trần Xuân Tú hoặc Nguyễn Trí Thành nha XSTK muốn kiếm A+ easily thì aim thầy Đô OOP thầy Võ Đình Hiếu là tốt nhất rồi, giữ lại nhó": [
+                "Lê Dương XSTK Thầy Nghiêm Nguyễn Việt Dũng oke không ạ?"
+            ],
+            "(1) sucks, no hope, the end of sunshine and happiness": [
+                "Bùi Hùng cơn ác mộng của bhvh =)))))))))"
+            ],
+            "4 sure kèo run =)))": [],
+            "chí ý thì hãy thêm chữ thầy với chữ cô vào để tôn trọng họ chứ nhỉ ?": [],
+            "1 bú đẫm2 nấu ăn3 không biết4 nấu ăn": []
+        }
+    },
+    {
+        "post": "Em muốn xin review các thầy cô em sắp học năm tới ạXSTK - thầy Đặng Thanh HảiCSDL - cô Dư Phương Hạnh-TA và cô Nguyễn Ngọc Quỳnh-THDSA - thầy Lê Quang Hiếu-CL và thầy Kiều Hải Đăng-THKTMT - PGS.TS Nguyễn Ngọc Hóa OOP - thầy Trần Hoàng Việt",
+        "comments": {
+            "Thầy Hải dạy hay nha em!": [
+                "em muốn hỏi về thầy cho điểm như nào ạ",
+                "Pham An Duc Vinh công nhận",
+                "Pham An Duc Vinh thầy 10 điểm, không có nhưng",
+                "Pham An Duc Vinh Hay anh ạ",
+                "Pham An Duc Vinh tin chuẩn ko anh"
+            ],
+            "DSA thầy Hiếu oke nhé em, OOP thầy Việt nữa XSTK thầy Đặng Thanh Hải cx oke, nhma có thể chọn thầy Lê Phê Đô cũng rất được nhé": [],
+            "Ktmt thầy Hoá thì... khóMôn đấy nhiều cái hơi trừu tượng nên khó kp do thầy. Còn thầy thì cũng k quá áp lực với sinh viên, nmà đừng để đầu rỗng là được": [
+                "Nghia Be anh có recommend thầy nào không ạ"
+            ],
+            "Nguyễn Trang  hoc dsa hong": [
+                "Diễm Quỳnh học đi bạn, thầy này là ổn nhất đấy ...",
+                "Diễm Quỳnh honggggggggg"
+            ],
+            "thầy Việt dạy dễ hiểu, trong lớp ghi chép vở đầy đủ là giữa kỳ điểm cao (gki kiểm tra tự luận, dc dùng tài liệu). Mình thấy thầy dạy nhiệt huyết và dễ tính nếu bạn nghiêm túc học hành ^^ đi học đầy đủ vì thầy có điểm danh": [],
+            "dsa mình học thầy Đăng thực hành, cũng chủ yếu lên lớp tự làm bài thôi. có gì khó hỏi thầy. Mình thấy thầy cho điểm không khó nên học cx oke": [],
+            "mình ko học xstk thầy Hải nhưng học thầy toán rr nếu là mình thì mình sẽ không chọn học thầy nữa đâu nên bạn tự hiểu =)))))": []
+        }
+    },
+    {
+        "post": "mn cho em xin review về môn Kiểm thử và đảm bảo chất lượng phần mềm của thầy Nguyễn Văn Sơn với ạ. Em cảm ơn ạ",
+        "comments": {
+            "Một từ: Học ^^": [
+                "Tạ Hàn  a có thể nói rõ hơn về cách dạy cũng như kiểm tra của thầy được ko ạ"
+            ],
+            "Tuyệt vời 10 điểm luôn em nhé, thầy nhiệt tình, cho điểm dễ trong trường hợp em chịu học :))": [],
+            "điểm cao, thầy nhiệt tình": [
+                "Hoàng Đạo ủa là cao dữ chưa:)))",
+                "Hoàng Đạo kì này thầy dạy lần đầu mà nên cao"
+            ],
+            "1 câu chuyện buồn": []
+        }
     },
     {
         "post": "Các tiền bối cho em xin review về các thầy và môn học sau với.1. Cô Ma Thị Châu : Môn CTDL&GT.2. Thầy Nguyễn Kiên Cường : Môn Cơ nhiệt.",
-        "comments": [
-            "Nga NguyễnCơ nhiệt thầy Cường",
-            "Chung Quang PhạmCơ nhiệt thầy Long thầy Tú chuẩn bài",
-            "Phạm Giỏi.",
-            "Bùi Phương Namem kì này học thầy Cường, và thật sự không hiểu thầy dạy gì",
-            "Tuan Anh.  thầy cường,  .sao k phải thầy châu nhỉ",
-            "Phương Thanhsao vẫn học cơ nhiệt ???",
-            "Tuấn Linhhôm nọ đại ca còn tư vấn e học cơ nhiệt mà  sao nay đã thấy học lại rồi",
-            "Quang Huy. Phan Đức Huân hè này ae cơ nhiệt",
-            "Quang TháiTrương Hoàng Giang thầy KC cơ nhiệt kìa, review xem nào"
-        ]
+        "comments": {
+            "Trương Hoàng Giang thầy KC cơ nhiệt kìa, review xem nào": [
+                "thầy dạy giáo trình tiếng anh rất tốt có tâmthoải mái với học sinh điểm kém hay đến muộn cũng k phàn nàn gì đâu nhưng tổng kết thì nguyên như thế sml",
+                "đang định học cải thiện =))))Giang học lại ko =)))))",
+                "Dàn fan boi của thầy Nguyễn Kiên Cường đây à :)))",
+                "haizz, đang nghe review còn đi học",
+                "Vcl review :)))",
+                "các đại ca thế nào em theo các anh",
+                "nghe quả học như nào tổng kết như thế là ko ưng rồi",
+                "chắc vào năm đợi thầy Tú",
+                "thi xong thầy bảo lớp nhiều 10 lắm :))"
+            ],
+            ". Phan Đức Huân hè này ae cơ nhiệt": [
+                "tạch tạch tạch",
+                "Quyết sống mái với môn ấy =))",
+                "Tạch thé lozz nào đc =))",
+                "Tạch"
+            ],
+            "hôm nọ đại ca còn tư vấn e học cơ nhiệt mà  sao nay đã thấy học lại rồi": [
+                "Cải thiện"
+            ],
+            "sao vẫn học cơ nhiệt ???": [
+                "Rảnh thì học ý c"
+            ],
+            ".  thầy cường,  .sao k phải thầy châu nhỉ": [],
+            "em kì này học thầy Cường, và thật sự không hiểu thầy dạy gì": [
+                "Dc học t.anh cơ sở 0",
+                "Bùi Hoàng Hồng Nhung chuẩn mẹ nó luôn",
+                "Thế học tiếp đi cho hiểu",
+                "Phan Đức Huân đợi cho đến khi gặp được thầy khác",
+                "Kỳ 1",
+                "thầy Hiện tuy dạy cũng k hiểu nhưng giữa kì coi dễ với chấm thoáng",
+                "Phan Quốc Việt thầy Cường cũng v",
+                "Cm nói linh tinh, thầy có hẳn 1 học trò cưng đấy Bùi Phương Nam Bùi Hoàng Hồng Nhung",
+                "Nga Nguyễn hí hí",
+                "Chuẩn bị được học lại củng cố kiến thức nhờ thầy"
+            ],
+            ".": [],
+            "Cơ nhiệt thầy Long thầy Tú chuẩn bài": [],
+            "Cơ nhiệt thầy Cường": [],
+            "Shinichi Kudo": []
+        }
     }
 ]

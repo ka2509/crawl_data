@@ -153,8 +153,10 @@ class Selenium:
             soup = BeautifulSoup(self.driver.page_source, "html.parser")
             posts = soup.find_all("div", class_="x78zum5 x1n2onr6 xh8yej3")
             for index, post in enumerate(posts):
+                    #if index <= 14: continue
                     post_content = post.find("div", class_="xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs x126k92a")
                     if post_content:
+                        print(f"POST Số {index + 1}")
                         # Find the "Leave a comment" button within the post if that post have one or more comments then click on the comment button
                         comment_count_element = post.find("span", class_="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xi81zsa")
                         if comment_count_element:
@@ -165,8 +167,36 @@ class Selenium:
                             time.sleep(3)
                             #refetch
                             soup = BeautifulSoup(self.driver.page_source, "html.parser")
-                            #find all the comment
-                            comments = soup.find_all("div", class_="x1y1aw1k xn6708d xwib8y2 x1ye3gou")
+
+                            #open view comment filter
+                            view_all_comment_button = soup.find("div", class_="x1i10hfl xjbqb8w x1ejq31n xd10rxx x1sy0etr x17r0tee x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x1n2onr6 x87ps6o x1lku1pv x1a2a7pz", role="button")
+                            view_all_comment_button_xpath = get_full_xpath(view_all_comment_button)
+                            self.driver.find_element(By.XPATH, view_all_comment_button_xpath).click()
+                            time.sleep(1)
+                            #refetch
+                            soup = BeautifulSoup(self.driver.page_source, "html.parser")
+                            #find view all comment option and click
+                            menu_items = soup.find_all("div", class_="x1i10hfl xjbqb8w x1ejq31n xd10rxx x1sy0etr x17r0tee x972fbf xcfux6l x1qhh985 xm0m39n xe8uvvx x1hl2dhg xggy1nq x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x87ps6o x1lku1pv x1a2a7pz xjyslct x9f619 x1ypdohk x78zum5 x1q0g3np x2lah0s x1i6fsjq xfvfia3 xnqzcj9 x1gh759c x10wwi4t x1x7e7qh x1344otq x1de53dj x1n2onr6 x16tdsg8 x1ja2u2z x6s0dn4", role="menuitem")
+                            view_all_comment_item = menu_items[len(menu_items) - 1]
+                            view_all_comment_item_xpath = get_full_xpath(view_all_comment_item)
+                            self.driver.find_element(By.XPATH, view_all_comment_item_xpath).click()
+                            time.sleep(1)
+                            #refetch
+                            soup = BeautifulSoup(self.driver.page_source, "html.parser")
+                            
+                            #find all the view all replies button and click 
+                            view_all_replies_buttons = soup.find_all("div", class_="x1i10hfl xjbqb8w xjqpnuy xa49m3k xqeqjp1 x2hbi6w x13fuv20 xu3j5b3 x1q0q8m5 x26u7qi x972fbf xcfux6l x1qhh985 xm0m39n x9f619 x1ypdohk xdl72j9 xe8uvvx xdj266r x11i5rnm xat24cr x2lwn1j xeuugli xexx8yu x18d9i69 xkhd6sd x1n2onr6 x16tdsg8 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1o1ewxj x3x9cwd x1e5q0jg x13rtm0m x3nfvp2 x87ps6o x1lku1pv x1a2a7pz x6s0dn4 xi81zsa x1q0g3np x1iyjqo2 xs83m0k xsyo7zv x1mnrxsn", role="button")
+                            if view_all_replies_buttons:
+                                for button in view_all_replies_buttons:
+                                    button_xpath = get_full_xpath(button)
+                                    self.driver.find_element(By.XPATH, button_xpath).click()
+                                    time.sleep(1)
+                            else:
+                                print("No comments that have replies")
+
+                            #refetch
+                            soup = BeautifulSoup(self.driver.page_source, "html.parser")
+
                             #locate the post after pop up
                             posts_popup = soup.find_all("span", class_="x193iq5w xeuugli x13faqbe x1vvkbs x1xmvt09 x1lliihq x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x xudqn12 x3x7a5m x6prxxf xvq8zen xo1l8bm xzsf02u x1yc453h")
                             post_popup = posts_popup[len(posts_popup)-1]
@@ -201,9 +231,33 @@ class Selenium:
                             else:
                                 print("this post dont have sub paragrpahs")
                             if content_post not in results:
-                                results[content_post] = []
-                            for comment in comments:
-                                results[content_post].append(comment.text.strip())
+                                results[content_post] = {}
+
+                            #find all the comment 
+                            comment_sections = soup.find_all("div", class_="x169t7cy x19f6ikt")
+                           
+                            for comment_section in comment_sections:
+                                #extract the text of root comment
+                                root_comment = comment_section.find("div", class_="x1n2onr6 x1swvt13 x1iorvi4 x78zum5 x1q0g3np x1a2a7pz")
+                                root_comment_element = root_comment.find("div", class_="x1lliihq xjkvuk6 x1iorvi4")
+                                if root_comment_element:
+                                    root_comment_text = root_comment_element.text.strip()
+                                    results[content_post][root_comment_text] = []
+                                else:
+                                    continue
+                                #extract the text of all replies to that root comment if exsist
+                                sub_comments = comment_section.find_all("div", class_="x78zum5 xdt5ytf")
+                                if sub_comments:
+                                    for sub_comment in sub_comments:
+                                        sub_comment_element = sub_comment.find("div", class_="x1lliihq xjkvuk6 x1iorvi4")
+                                        if sub_comment_element:
+                                            sub_comment_text = sub_comment_element.text.strip()
+                                            results[content_post][root_comment_text].append(sub_comment_text)
+                                        else:
+                                            continue
+                                else:
+                                    print("this comment doesnt have replies")        
+                                # results[content_post].append(comment.text.strip())
                             close_comment_buton = self.driver.find_element(By.XPATH, f"//div[@aria-label='Close' and @role='button']")
                             close_comment_buton.click()
                             # Wait for the comment section to close
@@ -262,13 +316,6 @@ class Selenium:
 
         self.driver.get("https://www.facebook.com/groups/188355961296813")
         time.sleep(5)
-
-    def insert_data_into_csv(self, post, comments):
-        try:
-            with open("facebook_posts.csv", "a", encoding="utf-8") as f:
-                f.write(f"{post},{comments}\n")
-        except Exception as e:
-            logger.error(f"Error writing to csv: {e}")
 
     # Method to close the Chrome instance.
     def close_browser(self, driver):
